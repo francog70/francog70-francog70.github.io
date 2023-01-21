@@ -5,47 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Sofia+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Sofia+Sans:ital@1&family=Zilla+Slab:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Gail Jordan</h1>
-    <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Foto de perfil de Gail Jordan">
+    <div id="nombre">  
+        <h1>Gail Jordan</h1>
+    </div>
+
+    <img src="https://randomuser.me/api/portraits/women/90.jpg" class="foto" alt="Foto de perfil de Gail Jordan">
     
-<h3><u>Sobre mi</u></h3>
-<div>
-Soy una persona proactiva, organizada y responsable, con buenas relaciones interpersonales.
-Siempre tengo la mejor disposición para la realización de mis labores. Busco un puesto de trabajo desafiante.
-</div>
+    <main class="info">
+        <h3 class="subtitulo"><u>Sobre mi</u></h3>
 
-<h3><u> Formación académica </u></h3>
-<ul>
-    <li>UNIVERSIDAD BORCELLE, Carrera de Dineño UX (en curso).</li>
-    <li>ESCUELA SECUNDARIA FAULETE, Bachiller con orientacion en Artes.</li>
-</ul>
+    <div id="sobre_mi">
+        Soy una persona proactiva, organizada y responsable, con buenas relaciones interpersonales.
+        Siempre tengo la mejor disposición para la realización de mis labores.
+        Busco un puesto de trabajo desafiante que me impulse a crecer como profesional.
+    </div>
 
-<h3><u>Idiomas</u></h3>
-<ul>
-    <li>Castellano nativo</li>
-    <li>Ingles Avanzado</li>
-    <li>Portugues inicial</li>
-</ul>
+        <h3 class="subtitulo"><u> Formación académica </u></h3>
+    <ul>
+        <li>
+        UNIVERSIDAD BORCELLE, Carrera de Dineño UX (en curso). 
+        <button type="button"  class="botones" onclick="verMas();"><i>Mostrar más</i></button>
+        </li>
+    <div id="uniBorcelle"> 
+        <a href="https://www.collegeboreal.ca/">https://www.collegeboreal.ca/</a>
+    <button type="button" class="botones" onclick="verMenos ()"><i>Mostrar más</i></button>
+    </div>
 
-<h3><u>Experiencias laborales</u></h3>
-<ul>
-    <li>Hoteles AI</li>
+    <li>
+        ESCUELA PROVINCIAL "GRAL MANUEL BELGRANO", Bachiller con orientacion en Artes. 
+        <button type="button" class="botones" onclick="verMas2();"><i>Mostrar más</i></button>
+    </li>
+    <div id="belgrano">
+        <a 
+        href="https://educacionartisticasantafe.gob.ar/sea/escuelas-e-institutos/escuela-provincial-de-artes-visuales-n-3031-general-manuel-belgrano/">
+        https://educacionartisticasantafe.gob.ar/sea/escuelas-e-institutos/escuela-provincial-de-artes-visuales-n-3031-general-manuel-belgrano/
+        </a>
+        <button type="button" class="botones" onclick="verMenos2()"><i>Mostrar más</i></button>
+    </div>
+    </ul>
 
-    <li>Target Corp, USA</li>
+        <h3 class="subtitulo"><u>Idiomas</u></h3>
+    <ul>
+        <li>Castellano nativo</li>
+        <li>Ingles Avanzado</li>
+        <li>Portugues inicial</li>
+    </ul>
 
-    <li>Diafarma</li>
-    
-</ul>
+        <h3 class="subtitulo"><u>Experiencias laborales</u></h3>
+    <ul>
+        <li>
+        Hoteles AI
+        <button type="button" class="botones" onclick="verMas3()"><i>Mostrar más</i></button>
+        </li> 
+    <div id="hotel">
+        <p>
+            Organización y monitoreo del equipo de "customer services" y de la atención en todos los canales “Central telefónica, 
+            email, live chat, facebook Messenger”, y seguimiento de la atención al cliente en los 46 establecimientos 24h/día, 360 días/año.
+            <button type="button" class="botones" onclick="verMenos3()" ><i>Mostrar más</i></button>
+        </p>
+    </div>
 
-<h3><u>Datos de contacto</u></h3>
- <ul>
-    <li><b>Telefono:</b> (648) 548-2712</li>
-    <li><b>Dirección:</b> 4603 Nowlin Rd</li>
-    <li><b>Email:</b> gail.jordan@example.com</li>
-    <li><b>LinkedIn:</b> </li>
-</ul>
+        <li>
+        Target Corp, USA
+        <button type="button" class="botones" onclick="verMas4()"><i>Mostrar más</i></button>
+        </li>
+    <div id="target">
+        <p>
+            Asistir activamente a los clientes que visitan la tienda, ayudándoles en la orientación física y la toma de decisiones de compra.
+            Formé parte de un programa para potenciar el “upselling”, consiguiendo aumentar las ventas de productos de decoración para Halloween 
+            en un 20% respecto al año anterior.
+            <button type="button" class="botones" onclick="verMenos4()"><i>Mostrar más</i></button>
+        </p>  
+    </div>
+    </ul>
+
+        <h3 class="subtitulo"><u>Datos de contacto</u></h3>
+    <ul>
+        <li><b>Telefono:</b> (648) 548-2712</li>
+        <li><b>Dirección:</b> 4603 Nowlin Rd</li>
+        <li><b>Email:</b> gail.jordan@example.com</li>
+        <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/franco-galvano-94b042203/"> Perfil de Gail</a> </li>
+    </ul>
+    </main>
+
+    <script src="js/function.js"></script>
 
 </body>
 </html>
